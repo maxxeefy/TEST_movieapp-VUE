@@ -1,0 +1,46 @@
+        input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+    
+        input+label {
+            display: inline-flex;
+            align-items: center;
+            user-select: none;
+        }
+    
+        input+label::before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #adb5bd;
+            margin-right: 0.5em;
+            background-repeat: no-repeat;
+        }
+    
+        input:checked+label::before {
+            background-image: url("../img/check_box.png");
+            background-size: contain;
+        }
+
+        .sort {
+            display: flex;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 16px;
+            color: #C4C4C4;
+            margin: 18px 0;
+    
+            &__name {
+                margin-right: 34.5px;
+            }
+    
+        }
+    
+        hr {
+            border: 1px solid #C4C4C4
+        }
